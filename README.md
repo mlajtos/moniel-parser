@@ -4,6 +4,7 @@ Parser for Moniel notation
 ## Usage
 
 Install: ```npm i moniel-parser```
+
 Use:
 ```javascript
 const p = require("moniel-parser")
