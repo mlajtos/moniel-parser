@@ -1,0 +1,44 @@
+Moniel{
+    Graph
+        = (NodeDefinition | Chain)*
+    NodeDefinition
+    	= "+" (LiteralNode) ":" MetaNode
+    Chain
+        = NonemptyListOf<Block, edge>
+    Block
+        = Node | List | path
+    Node (node)
+        = (identifier ":")? (LiteralNode | MetaNode)
+    LiteralNode (literal node)
+        = nodeName -- simple
+        | "(" nodeName Parameter* ")" -- parametrized
+    MetaNode (metanode)
+        = "{{" ForeignMetaNodeBody "}}" -- foreign
+        | "{" Graph "}" -- native
+    ForeignMetaNodeBody
+        = (~"}}" any)*
+    Parameter
+        = "-" parameterName parameterValue?
+    List (list)
+        = "[" ListOf<ListItem, ","> "]"
+    ListItem
+        = Node | path
+    nodeName
+        = &upper (alnum | "_")+
+    identifier (indentifier)
+        = &lower (alnum | "_")+
+    path (path)
+        = nonemptyListOf<identifier, "/">
+    parameterName
+        = lower (alnum | "_")*
+    parameterValue
+        = (~("-"|")"|"\n") any)+
+    edge (→)
+        = "->"
+    space
+        += comment
+    comment
+        = ("#" | "//") (~"\n" any)* "\n"? -- singleline
+        | "/*" (~"*/" any)* "*/" -- multiline
+        | "|" (~"|" any)* "|" -- multiline2
+}

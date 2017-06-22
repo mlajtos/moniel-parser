@@ -1,0 +1,44 @@
+{
+  "type": "Graph",
+  "definitions": [
+    {
+      "type": "Chain",
+      "blocks": [
+        {
+          "type": "Node",
+          "id": null,
+          "node": {
+            "type": "ForeignMetaNode",
+            "body": "ščťžýáíé"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Chain",
+      "blocks": [
+        {
+          "type": "Node",
+          "id": "dp_j",
+          "node": {
+            "type": "ForeignMetaNode",
+            "body": "A +/ .* B"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Chain",
+      "blocks": [
+        {
+          "type": "Node",
+          "id": "dp_csharp",
+          "node": {
+            "type": "ForeignMetaNode",
+            "body": "v1.Zip(v2, (a,b) => a * b).Sum()"
+          }
+        }
+      ]
+    }
+  ]
+}

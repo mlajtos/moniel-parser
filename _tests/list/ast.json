@@ -1,0 +1,40 @@
+{
+  "type": "Graph",
+  "definitions": [
+    {
+      "type": "Chain",
+      "blocks": [
+        {
+          "type": "List",
+          "items": [
+            {
+              "type": "Node",
+              "id": null,
+              "node": {
+                "type": "LiteralNode",
+                "name": "Hello",
+                "parameters": []
+              }
+            },
+            {
+              "type": "Node",
+              "id": null,
+              "node": {
+                "type": "LiteralNode",
+                "name": "World",
+                "parameters": []
+              }
+            },
+            {
+              "type": "Path",
+              "value": [
+                "hello",
+                "world"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

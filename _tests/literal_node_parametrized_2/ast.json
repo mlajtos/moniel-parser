@@ -1,0 +1,25 @@
+{
+  "type": "Graph",
+  "definitions": [
+    {
+      "type": "Chain",
+      "blocks": [
+        {
+          "type": "Node",
+          "id": null,
+          "node": {
+            "type": "LiteralNode",
+            "name": "HelloWorld",
+            "parameters": [
+              {
+                "type": "Parameter",
+                "name": "parameter",
+                "value": "value"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

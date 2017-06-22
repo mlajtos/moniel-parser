@@ -1,0 +1,18 @@
+{
+  "type": "Graph",
+  "definitions": [
+    {
+      "type": "Chain",
+      "blocks": [
+        {
+          "type": "Path",
+          "value": [
+            "road",
+            "to",
+            "hell"
+          ]
+        }
+      ]
+    }
+  ]
+}

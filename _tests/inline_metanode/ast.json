@@ -1,0 +1,54 @@
+{
+  "type": "Graph",
+  "definitions": [
+    {
+      "type": "Chain",
+      "blocks": [
+        {
+          "type": "Node",
+          "id": null,
+          "node": {
+            "type": "LiteralNode",
+            "name": "In",
+            "parameters": []
+          }
+        },
+        {
+          "type": "Node",
+          "id": null,
+          "node": {
+            "type": "MetaNode",
+            "body": {
+              "type": "Graph",
+              "definitions": [
+                {
+                  "type": "Chain",
+                  "blocks": [
+                    {
+                      "type": "Node",
+                      "id": null,
+                      "node": {
+                        "type": "LiteralNode",
+                        "name": "Aloha",
+                        "parameters": []
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "Node",
+          "id": null,
+          "node": {
+            "type": "LiteralNode",
+            "name": "Out",
+            "parameters": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "Graph",
+  "definitions": [
+    {
+      "type": "Chain",
+      "blocks": [
+        {
+          "type": "List",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

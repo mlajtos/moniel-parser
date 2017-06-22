@@ -1,0 +1,33 @@
+{
+  "name": "moniel-parser",
+  "version": "0.0.1",
+  "description": "Parser for Moniel notation",
+  "main": "Parser.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlajtos/moniel-parser.git"
+  },
+  "keywords": [
+    "notation",
+    "parser",
+    "graph"
+  ],
+  "author": "Milan Lajtoš <milan.lajtos@me.com> (https://github.com/mlajtos)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlajtos/moniel-parser/issues"
+  },
+  "homepage": "https://github.com/mlajtos/moniel-parser#readme",
+  "dependencies": {
+    "ohm-js": "^0.13.1"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "testRegex": "test.js"
+  }
+}

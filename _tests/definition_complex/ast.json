@@ -1,0 +1,23 @@
+{
+  "type": "Graph",
+  "definitions": [
+    {
+      "type": "Definition",
+      "node": {
+        "type": "LiteralNode",
+        "name": "Hello",
+        "parameters": [
+          {
+            "type": "Parameter",
+            "name": "parameter",
+            "value": "defaultValue"
+          }
+        ]
+      },
+      "definition": {
+        "type": "ForeignMetaNode",
+        "body": "something something something"
+      }
+    }
+  ]
+}
