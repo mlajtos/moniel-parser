@@ -1,5 +1,5 @@
 # moniel-parser
-Parser for Moniel notation
+Parser for [Moniel](https://github.com/mlajtos/moniel) notation
 
 ## Usage
 
