@@ -18,7 +18,9 @@ Moniel{
     ForeignMetaNodeBody
         = (~"}}" any)*
     Parameter
-        = "-" parameterName parameterValue?
+        = "-" parameterName ParameterValue?
+    ParameterValue
+        = (~("-"|")"|"\n") any)+
     List (list)
         = "[" ListOf<ListItem, ","> "]"
     ListItem
@@ -31,8 +33,6 @@ Moniel{
         = nonemptyListOf<identifier, "/">
     parameterName
         = lower (alnum | "_")*
-    parameterValue
-        = (~("-"|")"|"\n") any)+
     edge (→)
         = "->"
     space

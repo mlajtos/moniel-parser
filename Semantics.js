@@ -49,6 +49,9 @@ module.exports = {
             name: name.eval(),
             value: value.eval()[0] || null
         }),
+        ParameterValue: function(_) {
+            return this.sourceString
+        },
         path: (path) => ({
             type: "Path",
             value: path.eval()
@@ -60,9 +63,6 @@ module.exports = {
             return this.sourceString
         },
         parameterName: function(_, name) {
-            return this.sourceString
-        },
-        parameterValue: function(_) {
             return this.sourceString
         },
         NonemptyListOf: (x, _, xs) => [x.eval(), ...xs.eval()],
