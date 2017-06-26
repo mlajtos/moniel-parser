@@ -1,15 +1,15 @@
 {
-  "type": "Graph",
+  "kind": "Graph",
   "definitions": [
     {
-      "type": "Chain",
+      "kind": "Chain",
       "blocks": [
         {
-          "type": "Node",
+          "kind": "Node",
           "id": null,
           "node": {
-            "type": "LiteralNode",
-            "name": "HelloWorld",
+            "kind": "LiteralNode",
+            "type": "HelloWorld",
             "parameters": []
           }
         }

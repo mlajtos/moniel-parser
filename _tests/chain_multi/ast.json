@@ -1,47 +1,47 @@
 {
-  "type": "Graph",
+  "kind": "Graph",
   "definitions": [
     {
-      "type": "Chain",
+      "kind": "Chain",
       "blocks": [
         {
-          "type": "Node",
+          "kind": "Node",
           "id": null,
           "node": {
-            "type": "LiteralNode",
-            "name": "Hello",
+            "kind": "LiteralNode",
+            "type": "Hello",
             "parameters": []
           }
         },
         {
-          "type": "Node",
+          "kind": "Node",
           "id": null,
           "node": {
-            "type": "LiteralNode",
-            "name": "World",
+            "kind": "LiteralNode",
+            "type": "World",
             "parameters": []
           }
         }
       ]
     },
     {
-      "type": "Chain",
+      "kind": "Chain",
       "blocks": [
         {
-          "type": "Node",
+          "kind": "Node",
           "id": null,
           "node": {
-            "type": "LiteralNode",
-            "name": "World",
+            "kind": "LiteralNode",
+            "type": "World",
             "parameters": []
           }
         },
         {
-          "type": "Node",
+          "kind": "Node",
           "id": null,
           "node": {
-            "type": "LiteralNode",
-            "name": "Hello",
+            "kind": "LiteralNode",
+            "type": "Hello",
             "parameters": []
           }
         }

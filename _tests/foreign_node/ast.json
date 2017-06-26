@@ -1,40 +1,40 @@
 {
-  "type": "Graph",
+  "kind": "Graph",
   "definitions": [
     {
-      "type": "Chain",
+      "kind": "Chain",
       "blocks": [
         {
-          "type": "Node",
+          "kind": "Node",
           "id": null,
           "node": {
-            "type": "ForeignMetaNode",
+            "kind": "ForeignMetaNode",
             "body": "ščťžýáíé"
           }
         }
       ]
     },
     {
-      "type": "Chain",
+      "kind": "Chain",
       "blocks": [
         {
-          "type": "Node",
+          "kind": "Node",
           "id": "dp_j",
           "node": {
-            "type": "ForeignMetaNode",
+            "kind": "ForeignMetaNode",
             "body": "A +/ .* B"
           }
         }
       ]
     },
     {
-      "type": "Chain",
+      "kind": "Chain",
       "blocks": [
         {
-          "type": "Node",
+          "kind": "Node",
           "id": "dp_csharp",
           "node": {
-            "type": "ForeignMetaNode",
+            "kind": "ForeignMetaNode",
             "body": "v1.Zip(v2, (a,b) => a * b).Sum()"
           }
         }

@@ -10,8 +10,8 @@ Moniel{
     Node (node)
         = (identifier ":")? (LiteralNode | MetaNode)
     LiteralNode (literal node)
-        = nodeName -- simple
-        | "(" nodeName Parameter* ")" -- parametrized
+        = nodeType -- simple
+        | "(" nodeType Parameter* ")" -- parametrized
     MetaNode (metanode)
         = "{{" ForeignMetaNodeBody "}}" -- foreign
         | "{" Graph "}" -- native
@@ -25,7 +25,7 @@ Moniel{
         = "[" ListOf<ListItem, ","> "]"
     ListItem
         = Node | path
-    nodeName
+    nodeType
         = &upper (alnum | "_")+
     identifier (indentifier)
         = &lower (alnum | "_")+

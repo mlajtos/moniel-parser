@@ -1,21 +1,21 @@
 {
-  "type": "Graph",
+  "kind": "Graph",
   "definitions": [
     {
-      "type": "Definition",
+      "kind": "Definition",
       "node": {
-        "type": "LiteralNode",
-        "name": "Hello",
+        "kind": "LiteralNode",
+        "type": "Hello",
         "parameters": [
           {
-            "type": "Parameter",
+            "kind": "Parameter",
             "name": "parameter",
             "value": "defaultValue"
           }
         ]
       },
       "definition": {
-        "type": "ForeignMetaNode",
+        "kind": "ForeignMetaNode",
         "body": "something something something"
       }
     }

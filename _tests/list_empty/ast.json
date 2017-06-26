@@ -1,11 +1,11 @@
 {
-  "type": "Graph",
+  "kind": "Graph",
   "definitions": [
     {
-      "type": "Chain",
+      "kind": "Chain",
       "blocks": [
         {
-          "type": "List",
+          "kind": "List",
           "items": []
         }
       ]

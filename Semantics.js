@@ -2,50 +2,50 @@ module.exports = {
     operation: "eval",
     actions: {
         Graph: (defs) => ({
-            type: "Graph",
+            kind: "Graph",
             definitions: defs.eval()
         }),
         Chain: (list) => ({
-            type: "Chain",
+            kind: "Chain",
             blocks: list.eval()
         }),
         NodeDefinition: (_, node, __, definition) => ({
-            type: "Definition",
+            kind: "Definition",
             node: node.eval(),
             definition: definition.eval()
         }),
         Node: (id, _, node) => ({
-            type: "Node",
+            kind: "Node",
             id: id.eval()[0] || null,
             node: node.eval()
         }),
-        LiteralNode_simple: (name) => ({
-            type: "LiteralNode",
-            name: name.eval(),
+        LiteralNode_simple: (type) => ({
+            kind: "LiteralNode",
+            type: type.eval(),
             parameters: []
         }),
-        LiteralNode_parametrized: (_, name, params, __) => ({
-            type: "LiteralNode",
-            name: name.eval(),
+        LiteralNode_parametrized: (_, type, params, __) => ({
+            kind: "LiteralNode",
+            type: type.eval(),
             parameters: params.eval()
         }),
         MetaNode_native: (_, body, __) => ({
-            type: "MetaNode",
+            kind: "MetaNode",
             body: body.eval()
         }),
         MetaNode_foreign: (_, body, __) => ({
-            type: "ForeignMetaNode",
+            kind: "ForeignMetaNode",
             body: body.eval()
         }),
         ForeignMetaNodeBody: function(_) {
             return this.sourceString
         },
         List: (_, list, __) => ({
-            type: "List",
+            kind: "List",
             items: list.eval()
         }),
         Parameter: (_, name, value) => ({
-            type: "Parameter",
+            kind: "Parameter",
             name: name.eval(),
             value: value.eval()[0] || null
         }),
@@ -53,10 +53,10 @@ module.exports = {
             return this.sourceString
         },
         path: (path) => ({
-            type: "Path",
+            kind: "Path",
             value: path.eval()
         }),
-        nodeName: function(_, name) {
+        nodeType: function(_, type) {
             return this.sourceString
         },
         identifier: function(_, id) {
