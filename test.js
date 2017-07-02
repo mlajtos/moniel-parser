@@ -25,8 +25,8 @@ describe("Parser", () => {
         let target
 
         if (!parseResult.ast) {
-            const errorFilePath = path.join(testDirectory, "_error.json")
-            generated = parseResult
+            const errorFilePath = path.join(testDirectory, "issues.json")
+            generated = parseResult.issues
             target = loadSnapshot(errorFilePath, generated)
         } else {
             const astFilePath = path.join(testDirectory, "ast.json")

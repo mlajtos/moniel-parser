@@ -1,6 +1,6 @@
 {
   "name": "moniel-parser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Parser for Moniel notation",
   "main": "Parser.js",
   "scripts": {

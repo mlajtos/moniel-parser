@@ -21,20 +21,26 @@ class Parser{
     }
 
     parse(source) {
+        let ast = null
+        let issues = []
+
         const matchResult = this.grammar.match(source)
 
         if (matchResult.failed()) {
             const expected = matchResult.getExpectedText()
-            const position = matchResult.getRightmostFailurePosition()
-            return {
-                expected,
-                position
-            }
+            const location = matchResult.getRightmostFailurePosition()
+
+            issues.push({
+                message: `Expected ${expected}.`,
+                location
+            })
+        } else {
+            ast = this.semantics(matchResult).eval()
         }
         
-        const ast = this.semantics(matchResult).eval()
         return {
-            ast
+            ast,
+            issues
         }
     }
 }
